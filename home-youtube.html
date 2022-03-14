@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites</title>
+    <link rel="stylesheet" href="./style-home-youtube.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="enLangSelect()">
+    <div id="preloader">
+    </div>
+    <div id="ENcontainer">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="logo">
+                    <a href="" class="nav-link">
+                        <span class="link-text logo-text">Nhat</span>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
+                            <g class="fa-group">
+                                <path fill="currentColor"
+                                    d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                                    class="fa-secondary"></path>
+                                <path fill="currentColor"
+                                    d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                                    class="fa-primary"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" onclick="progressHome()" href="#ENhomepage">
+                        <img src="./home_black_48dp.svg" alt="">
+                        <span class="link-text">Homepage</span>
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" onclick="progressFood()" href="#ENfoodpage">
+                        <img src="./restaurant_black_48dp.svg" alt="">
+                        <span class="link-text">Food</span>
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" onclick="progressAnimal()" href="#ENanimalpage">
+                        <img src="./menu_book_black_48dp.svg" alt="">
+                        <span class="link-text">Book</span>
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" onclick="progressGame()" href="#ENgamepage">
+                        <img src="./sports_soccer_black_48dp.svg" alt="">
+                        <span class="link-text">Sport</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="ENlang-selector">
+                <li class="nav-item">
+                    <a href="#ENhomepage" class="nav-link" id="ENenFlag" onclick="progressENlang()">
+                        <img src="./button_en.png">
+                        <span class="link-text">
+                            EN
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#VNhomepage" class="nav-link" id="ENvnFlag" onclick="progressVNlang()">
+                        <img src="./button_vn.png">
+                        <span class="link-text">
+                            VN
+                        </span>
+                    </a>
+                </li>
+                </li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div id="ENhomepage">
+                <ul>
+                    <li>
+                    <div class="container">
+                        <section>
+                            <span class="text">H</span>
+                            <span class="text">i</span>
+                            <span class="text">,</span>
+                        </section>
+                        <section>
+                            <span class="text">I</span>
+                            <span class="text">'</span>
+                            <span class="text">m</span>
+                            &nbsp;
+                            <span class="text">N</span>
+                            <span class="text">h</span>
+                            <span class="text">a</span>
+                            <span class="text">t</span>
+                        </section>
+                        <section class="info">
+                            <span class="text">T</span>
+                            <span class="text">h</span>
+                            <span class="text">i</span>
+                            <span class="text">s</span>
+                            &ensp;
+                            <span class="text">i</span>
+                            <span class="text">s</span>
+                        </section>
+                        <section class="info">
+                            <span class="text">M</span>
+                            <span class="text">y</span>
+                            &ensp;
+                            <span class="text">F</span>
+                            <span class="text">a</span>
+                            <span class="text">v</span>
+                            <span class="text">o</span>
+                            <span class="text">r</span>
+                            <span class="text">i</span>
+                            <span class="text">t</span>
+                            <span class="text">e</span>
+                            &ensp;
+                            <span class="text">W</span>
+                            <span class="text">e</span>
+                            <span class="text">b</span>
+                            <span class="text">s</span>
+                            <span class="text">i</span>
+                            <span class="text">t</span>
+                            <span class="text">e</span>
+                            <span class="text">!</span>
+                        </section>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <div id="ENfoodpage">
+            <div>
+                <section>
+                    <h1>My Favorite Food</h1>
+                    <h2>Vietnamese Pho</h2>
+                    <div class="div-food">
+                        <img class="resize"
+                            src="./500px-phohaitrieu-6059-1540791-6860-5415-1601542922.jpg" />
+                        <p id="ENfoodparagraph">Pho is one of my favorite dishes. Pho is the foremost well known and
+                            extraordinary food in my country, Vietnam. There are two main kinds of Pho: Pho with beef and
+                            Pho with chicken. Pho is served in a bowl with a particular cut of white rice noodles in clear
+                            beef broth(steak, greasy flank, incline flank, brisket), with thin slices of beef. Chicken Pho
+                            is made by using the same flavors as beef Pho, but the broth is made utilizing as it were
+                            chicken bones and meat, as well as a few inside organs of the chicken, such as the heart, the
+                            undeveloped eggs and the gizzard. I frequently appreciate a bowl of hot and zesty Pho for
+                            breakfast. Mornings are best time for pho in Vietnam. I adore Pho and I can eat it each morning
+                            without boring.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="ENanimalpage">
+            <section>
+                <h1>My Favorite Book</h1>
+                <h2>Prison Diary</h2>
+                <div class="div-animal">
+                    <img src="./nhat-kytrong-tu.jpg" />
+                    <p id="ENbookparagraph">
+                        <b>Introduction: </b>Prison Diary is a collection of 134 poems in Chinese characters in the form of Tang Lu composed by Ho Chi Minh during
+                        the time he was imprisoned by the Chiang Kai-shek government in Guangxi, China, from August 29, 1942 to September 10,
+                        1943. In addition, the last part of the document is a book-reading pen and a newspaper-reading pen, which summarizes
+                        important information about contemporary politics, military, international culture and Vietnam.
+                        <br>
+                        <br>
+                        <b>Feeling: </b>Born into the author's reluctant circumstances (imprisoned) but actually when I read the book, I did not see Uncle Ho's
+                        pessimism, depression or lamentation. Uncle calmly wrote poems that were beautiful, modern and above all filled with
+                        thoughts and ideas towards the Revolution, towards the inevitable future, towards people in the same situation. How
+                        admirable it is to be in such a dark and humiliating situation and still maintain Ho Chi Minh's personalities. This poetic diary
+                        has demonstrated the qualities of a talented artist in Uncle Ho, as well as the indomitable and resilient spirit that
+                        not everyone has and can keep.
+                    </p>
+                </div>
+            </section>
+            <section class="ENauthor">
+                <h1>Author</h1>
+                <h2>Ho Chi Minh</h2>
+                <div class="div-animal">
+                    <img class="imgAuthor" src="./Ho_Chi_Minh_1946.jpg" />
+                    <p id="ENauthorparagraph">
+                        <b>Author: </b>Ho Chi Minh, whose real name is Nguyen Sinh Cung, was a revolutionary and the founder of the Communist Party of Vietnam
+                        and the first president of the Democratic Republic of Vietnam (1945-1969). In Vietnam, he is often called "Uncle Ho" or
+                        the respectful name is "Uncle".
+                    </p>
+                </div>
+            </section>
+            <section class="ENauthor">
+                <i style="margin-left: 9rem;">Ho Chi Minh's portrait</i>
+            </section>
+        </div>
+        <div id="ENgamepage">
+            <section>
+                <h1>My Favorite Sport</h1>
+                <h2>Football</h2>
+                <div class="div-game">
+                    <img class="resize" src="./123082491_3003161299790035_5933459707849677548_n.jpg"
+                        alt="My class win the football competition" />
+                    <p id="ENgameparagraph">My favourite sport is playing football. I often play football in my spare time.
+                        After completing my homework at home, I generally spend a lot of free time playing football. I was
+                        so interested to play football from my childhood however started learning to play well when I was 8
+                        years old. I was in one class when I was 5 years old. My father asked my class teacher in the school
+                        about my hobby of football. And my teacher told him that there is a facility for playing sports
+                        daily in the school from class 1 so you can admit your child. By the time, I really enjoy playing
+                        football and participating in inter-class competitions.</p>
+                </div>
+                <h1>My Favorite Player</h1>
+                <h2>Cristiano Ronaldo</h2>
+                <div class="div-game">
+                    <img class="resize" src="./42f1a3ce980bb989aa1514bc889ee360.jpg"
+                        alt="" />
+                    <p id="ENplayerparagraph">Cristiano Ronaldo dos Santos Aveiro (Cristiano Ronaldo) was born on 5 February 1985 in Funchal, Madeira, Portugal into a
+                    very poor family. The poverty made his life very hard. His father, José used to work as a gardener and kit man in a
+                    football club on a very low pay. Ronaldo worked as a kit man was to supply kits to football players and clean their rooms. And
+                    now he is one of the best football player in the world with nearly 800 career goals, 30 trophies, five Ballons d'Or.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="VNcontainer">
+        <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="" class="nav-link">
+                    <span class="link-text logo-text">Nhat</span>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
+                        <g class="fa-group">
+                            <path fill="currentColor"
+                                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                                class="fa-secondary"></path>
+                            <path fill="currentColor"
+                                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                                class="fa-primary"></path>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" onclick="progressHome()" href="#VNhomepage">
+                    <img src="./home_black_48dp.svg" alt="">
+                    <span class="link-text">Trang chủ</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" onclick="progressFood()" href="#VNfoodpage">
+                    <img src="./restaurant_black_48dp.svg" alt="">
+                    <span class="link-text">Đồ ăn</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" onclick="progressAnimal()" href="#VNanimalpage">
+                    <img src="./menu_book_black_48dp.svg" alt="">
+                    <span class="link-text">Sách</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" onclick="progressGame()" href="#VNgamepage">
+                    <img src="./sports_soccer_black_48dp.svg" alt="" >
+                    <span class="link-text">Thể thao</span>
+                </a>
+            </li>
+            <li class="nav-item" id="VNlang-selector">
+                <li class="nav-item">
+                    <a href="#ENhomepage" class="nav-link" id="VNenFlag" onclick="progressENlang()">
+                        <img src="./button_en.png">
+                        <span class="link-text">
+                            EN
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#VNhomepage" class="nav-link" id="VNvnFlag" onclick="progressVNlang()">
+                        <img src="./button_vn.png">
+                        <span class="link-text">
+                            VN
+                        </span>
+                    </a>
+                </li>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="VNhomepage">
+            <ul>
+                <li>
+                    <div class="container">
+                        <section>
+                            <span class="text">X</span>
+                            <span class="text">i</span>
+                            <span class="text">n</span>
+                            &ensp;
+                            <span class="text">C</span>
+                            <span class="text">h</span>
+                            <span class="text">à</span>
+                            <span class="text">o</span>
+                            <span class="text">,</span>
+                        </section>
+                        <section>
+                            <span class="text">T</span>
+                            <span class="text">ô</span>
+                            <span class="text">i</span>
+                            &ensp;
+                            <span class="text">L</span>
+                            <span class="text">à</span>
+                            &ensp;
+                            <span class="text">N</span>
+                            <span class="text">h</span>
+                            <span class="text">ậ</span>
+                            <span class="text">t</span>
+                        </section>
+                        <section class="info">
+                            <span class="text">Đ</span>
+                            <span class="text">â</span>
+                            <span class="text">y</span>
+                            &nbsp;
+                            <span class="text">L</span>
+                            <span class="text">à</span>
+                            &ensp;
+                        </section>
+                        <section class="info">
+                            <span class="text">T</span>
+                            <span class="text">r</span>
+                            <span class="text">a</span>
+                            <span class="text">n</span>
+                            <span class="text">g</span>
+                            &nbsp;
+                            <span class="text">W</span>
+                            <span class="text">e</span>
+                            <span class="text">b</span>
+                            &nbsp;
+                            <span class="text">Y</span>
+                            <span class="text">ê</span>
+                            <span class="text">u</span>
+                            &nbsp;
+                            <span class="text">T</span>
+                            <span class="text">h</span>
+                            <span class="text">í</span>
+                            <span class="text">c</span>
+                            <span class="text">h</span>
+                            &nbsp;
+                            <span class="text">C</span>
+                            <span class="text">ủ</span>
+                            <span class="text">a</span>
+                            &nbsp;
+                            <span class="text">T</span>
+                            <span class="text">ô</span>
+                            <span class="text">i</span>
+                        </section>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div id="VNfoodpage">
+        <div>
+            <section>
+                <h1>Đồ ăn yêu thích của tôi</h1>
+                <h2>Phở Việt Nam</h2>
+                <div class="div-food">
+                    <img class="imgPho"
+                        src="./500px-phohaitrieu-6059-1540791-6860-5415-1601542922.jpg" />
+                    <p id="VNfoodparagraph">Phở là một trong những món ăn mà tôi thích nhất.
+                    Phở là món ăn nổi tiếng và đặc biết bậc nhất ở đất nước Việt Nam của tôi.
+                    Thường sẽ có hai loại phở phổ biến nhất: phở bò và phở gà. Phở được bày biện
+                    trong một bát lớn có các sợi phở, nước lèo(gồm thịt bò, sườn béo, sườn nghiêng,
+                    ức bò), và các miếng bò thái nhỏ. Phở gà cũng được sử dụng các nguyên liệu như 
+                    phở bò, nhưng phần nước lèo được làm bởi thịt và xương gà, cũng như một số nội tại gà như
+                    tim gà, trứng gà con so, mề gà. Tôi thường thưởng thức một bát phở
+                    nóng hổi và tê tê cay cho bữa sáng. Buổi sáng là một khoảng thời gian
+                    đặc biệt cho phở tại Việt Nam. Tôi yêu phở và có thể ăn phở mỗi buổi sáng mà không hề chán.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="VNanimalpage">
+        <section>
+            <h1>Cuốn sách yêu thích của tôi</h1>
+            <h2>Nhật kí trong tù</h2>
+            <div class="div-animal">
+                <img class="cat"
+                    src="./nhat-kytrong-tu.jpg" />
+                <p id="VNbookparagraph">
+                    <b>Giới thiệu: </b>Nhật ký trong tù (Hán-Việt: Ngục trung nhật ký) là tập thơ chữ Hán gồm 134 bài theo thể
+                    Đường luật do Hồ Chí Minh sáng tác trong thời gian bị chính quyền Tưởng Giới Thạch bắt giam ở Quảng Tây, Trung Quốc, từ
+                    ngày 29 tháng 8 năm 1942 đến ngày 10 tháng 9 năm 1943. Ngoài ra, phần cuối văn bản là bút ký đọc sách và bút ký đọc
+                    báo ghi chép tóm tắt những thông tin quan trọng về chính trị, quân sự, văn hóa quốc tế và Việt Nam đương thời.
+                    <br>
+                    <br>
+                    <b>Cảm nhận: </b>Sinh ra trong hoàn cảnh bất đắc dĩ của tác giả (bị tù đày) nhưng thực sự khi đọc tác phẩm, tôi không hề thấy sự bi quan, chán nản
+                hay than thở của Bác. Bác bình tĩnh làm thơ thật đẹp, hiện đại và hơn hết là chứa chan những tâm tư, ý tưởng hướng về
+                Cách mạng, hướng tới tương lai tất yếu, hướng tới những người cùng cảnh ngộ. Ở trong một hoàn cảnh đen tối và nhục nhã
+                như vậy mà vẫn giữ được phong cách của Hồ Chí Minh, đáng khâm phục biết bao. Cuốn nhật ký đầy chất thơ này đã chứng tỏ phẩm
+                chất người nghệ sĩ tài hoa ở Bác, cũng như tinh thần bất khuất, quật cường mà không phải ai cũng có được và có thể giữ
+                được.
+                </p>
+            </div>
+        </section>
+        <section class="VNauthor">
+            <h1>Tác giả</h1>
+            <h2>Hồ Chí Minh</h2>
+            <div class="div-animal">
+                <img class="imgAuthor" src="./Ho_Chi_Minh_1946.jpg" />
+                <p id="VNauthorparagraph">
+                    <b>Tác giả: </b>Hồ Chí Minh, tên khai sinh là Nguyễn Sinh Cung, là một nhà cách mạng và chính là người sáng lập
+                    ra Đảng Cộng sản Việt Nam và chính là chủ tịch nước đầu tiên của nước Việt Nam Dân chủ Cộng hòa(1945-1969). Ở
+                    Việt Nam, ông thường được gọi là "Bác Hồ" hay tên gọi mang nghĩa kính trọng là "Bác".
+                </p>
+            </div>
+        </section>
+        <section class="VNauthor">
+            <i style="margin-left: 6rem;">Chân dung chủ tịch Hồ Chí Minh</i>
+        </section>
+    </div>
+    <div id="VNgamepage">
+        <section>
+            <h1>Môn thể thao yêu thích của tôi</h1>
+            <h2>Bóng đá</h2>
+            <div class="div-game">
+                <img class="resize"
+                    src="./123082491_3003161299790035_5933459707849677548_n.jpg"
+                    alt="My class win the football competition" />
+                <br>
+                <p id="VNgameparagraph">Môn thể thao yêu thích của tôi là bóng đá. Tôi thường chơi bóng đá trong thời gian rảnh. Sau khi hoàn thành bài tập về nhà, tôi sẽ dành phần lớn thời gian chơi bóng đá. Tôi đã đam mê với bóng đá từ thời thơ ấu dù tôi mới học cách đá bóng tốt từ lúc 8 tuổi. Tôi đã tham gia một lớp học từ lúc 5 năm. Bố tôi hỏi giáo viên trên trường về sở thích bóng đá của tôi và giáo viên tôi bảo bố tôi rằng có một câu lạc bộ thể thao hàng ngày trên trường từ lớp 1 nên mọi người có thể trông trẻ tại đó. Theo thời gian, tôi rất thích bóng đá và thường tham gia các giải đấu của các lớp.</p>
+            </div>
+            <i style="margin-top:0px; margin-left:10px; display:inline-flex;">Lớp tôi vô địch giải bóng đá</i>
+                <h1>Cầu thủ yêu thích của tôi</h1>
+            <h2>Cristiano Ronaldo</h2>
+            <div class="div-game">
+                <img class="resize" src="./42f1a3ce980bb989aa1514bc889ee360.jpg" alt="" />
+                <p id="VNplayerparagraph">Cristiano Ronaldo dos Santos Aveiro, tên thật của Cristiano Ronaldo, sinh ra vào ngày 5/2/1985 tại quê nhà Funchal, Madeira, Bồ Đào Nha trong một gia đình khó khăn. Việc nghèo đói khiến cuộc sống của anh ấy khó khăn hơn bao giờ hết. Bố của anh, ông José từng là nhân viên dọn cỏ và trang thiết bị cho một đội bóng với mức lương cực thấp. Ronaldo theo bố làm nhân viên trang thiết bị tại đó. Và giờ anh ấy là một trong những cầu thủ tầm cỡ bậc nhất thế giới với hơn 800 bàn thắng, 30 chiếc cúp vô địch và 5 quả bóng vàng.</p>
+            </div>
+            
+        </section>
+    </div>
+    </div>
+    <script>
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+    <script src="./script-home-youtube.js"></script>
+</body>
+
+</html>
